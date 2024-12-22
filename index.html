@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МАОУ СОШ №20</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <!-- Логотип -->
+            <div class="logo">МАОУ СОШ №20</div>
+            <!-- Навигационное меню -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li><a href="students.html">Ученикам</a></li>
+                    <li><a href="parents.html">Родителям</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <!-- Кнопка входа -->
+            <button class="login-btn">Войти</button>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Баннер с приветственным текстом -->
+        <section class="banner">
+            <div class="banner-content">
+                <h1>Добро пожаловать в МАОУ СОШ №20!</h1>
+                <p>Знания и успех - наш приоритет.</p>
+            </div>
+        </section>
+
+        <!-- Блоки под баннером -->
+        <section class="features">
+            <div class="container">
+                <!-- Анонс события: День флага России -->
+                <div class="feature-card">
+                    <img src="flag-day.jpg" alt="День флага России">
+                    <h3>День государственного флага Российской Федерации</h3>
+                    <p><strong>22.08.</strong> День Государственного флага Российской Федерации — один из официально установленных праздников России.</p>
+                    <p>Он был установлен в 1994 году указом президента Российской Федерации и отмечается 22 августа.</p>
+                    <p>Праздник посвящён возрождённому флагу Российской Федерации — «национальному триколору».</p>
+                    <p>22 августа, учащиеся 6-х классов МАОУ СОШ №20, посетили Баранчинскую библиотеку. Где прошло мероприятие, посвященное дню Государственного флага Российской Федерации.</p>
+                    <p>Выражаем огромную благодарность Баевой Л. А. за сотрудничество и данное мероприятие, которое прошло в Баранчинской библиотеке.</p>
+                    <p>Всех граждан страны поздравляем с Днем флага России! Желаем, чтобы вашу жизнь украшали только яркие полосы везения, успешности, надежды и мечты! Поздравляем с Днём флага России!</p>
+                </div>
+
+                <!-- Плашка "Расписание" с выбором класса -->
+                <div class="feature-card">
+                    <h3>Расписание</h3>
+                    <label for="class-select">Выберите класс:</label>
+                    <select id="class-select">
+                        <option value="5">5 класс</option>
+                        <option value="6">6 класс</option>
+                        <option value="7">7 класс</option>
+                        <option value="8">8 класс</option>
+                        <option value="9">9 класс</option>
+                        <option value="10">10 класс</option>
+                        <option value="11">11 класс</option>
+                    </select>
+
+                    <!-- Контейнер для таблицы расписания с горизонтальной прокруткой -->
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>День недели</th>
+                                    <th>Урок 1</th>
+                                    <th>Урок 2</th>
+                                    <th>Урок 3</th>
+                                    <th>Урок 4</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Понед. </td>
+                                    <td>Математика</td>
+                                    <td>Русский язык</td>
+                                    <td>Физика</td>
+                                    <td>Химия</td>
+                                </tr>
+                                <tr>
+                                    <td>Вторник</td>
+                                    <td>Литература</td>
+                                    <td>Биология</td>
+                                    <td>Английский</td>
+                                    <td>Физкультура</td>
+                                </tr>
+                                <!-- Добавьте остальные дни недели -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Плашка "Электронный дневник" с выбором класса и таблицей оценок -->
+                <div class="feature-card">
+                    <h3>Электронный дневник</h3>
+                    <label for="class-select-diary">Выберите класс:</label>
+                    <select id="class-select-diary">
+                        <option value="5">5 класс</option>
+                        <option value="6">6 класс</option>
+                        <option value="7">7 класс</option>
+                        <option value="8">8 класс</option>
+                        <option value="9">9 класс</option>
+                        <option value="10">10 класс</option>
+                        <option value="11">11 класс</option>
+                    </select>
+
+                    <!-- Контейнер для таблицы оценок с горизонтальной прокруткой -->
+                    <div class="table-container">
+                        <table class="grades">
+                            <thead>
+                                <tr>
+                                    <th>Предмет</th>
+                                    <th>Оценка</th>
+                                    <th>Комментарий</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Математика</td>
+                                    <td>5</td>
+                                    <td>Отлично</td>
+                                </tr>
+                                <tr>
+                                    <td>Русский язык</td>
+                                    <td>4</td>
+                                    <td>Хорошо</td>
+                                </tr>
+                                <tr>
+                                    <td>Английский</td>
+                                    <td>5</td>
+                                    <td>Отлично</td>
+                                </tr>
+                                <!-- Добавьте другие предметы -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>Контакты: (999) 999-9999 | info@school20.ru</p>
+            <p>Адрес: п. Баранчинский</p>
+            <p>© 2024 МАОУ СОШ №20</p>
+        </div>
+    </footer>
+</body>
+
+</html>

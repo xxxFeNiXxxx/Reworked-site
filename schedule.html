@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание | МАОУ СОШ №20</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">МАОУ СОШ №20</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li><a href="students.html">Ученикам</a></li>
+                    <li><a href="parents.html">Родителям</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="banner-content">
+                <h1>Расписание занятий</h1>
+                <p>Выберите класс, чтобы просмотреть расписание.</p>
+            </div>
+        </section>
+
+        <!-- Плашка "Расписание" с выбором класса -->
+        <div class="feature-card">
+            <h3>Расписание</h3>
+            <label for="class-select">Выберите класс:</label>
+            <select id="class-select">
+                <option value="5">5 класс</option>
+                <option value="6">6 класс</option>
+                <option value="7">7 класс</option>
+                <option value="8">8 класс</option>
+                <option value="9">9 класс</option>
+                <option value="10">10 класс</option>
+                <option value="11">11 класс</option>
+            </select>
+
+            <!-- Контейнер для таблицы расписания с горизонтальной прокруткой -->
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>День недели</th>
+                            <th>Урок 1</th>
+                            <th>Урок 2</th>
+                            <th>Урок 3</th>
+                            <th>Урок 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Понед. </td>
+                            <td>Математика</td>
+                            <td>Русский язык</td>
+                            <td>Физика</td>
+                            <td>Химия</td>
+                        </tr>
+                        <tr>
+                            <td>Вторник</td>
+                            <td>Литература</td>
+                            <td>Биология</td>
+                            <td>Английский</td>
+                            <td>Физкультура</td>
+                        </tr>
+                        <!-- Добавьте остальные дни недели -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Контакты: (999) 999-9999 | info@school20.ru</p>
+            <p>Адрес: п. Баранчинский</p>
+            <p>© 2024 МАОУ СОШ №20</p>
+        </div>
+    </footer>
+</body>
+</html>
